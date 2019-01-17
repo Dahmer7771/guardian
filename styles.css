@@ -1,0 +1,594 @@
+.cbalink {
+  display: none;
+}
+body {
+  margin: 00px auto;
+  padding: 0px;
+  min-width: 440px;
+  max-width: 1440px;
+  font-family: 'Maven Pro', sans-serif;
+  position: relative;
+  box-shadow: 0px 0px 5px;
+}
+.button {
+  width: 274px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:active {
+  color: #8ae2e2;
+}
+.logo-2 {
+  display: none;
+  width: 55px;
+  margin-right: 2%;
+  margin-top: 20px;
+}
+.menu-2 {
+  display: none;
+  position: absolute;
+  right: 10px;
+  font-size: 16px;
+  padding-top: 15px;
+}
+.menu-2 a:nth-child(3) {
+  font-size: 30px;
+}
+header {
+  padding: 0px 15px 10px 15px;
+  color: #ffffff;
+  width: calc(100% - 30px);
+  background-image: url(images/top_1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header .header_flex_container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+header .header_flex_container .menu-1 {
+  position: absolute;
+  right: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+header .header_flex_container .logo-1 {
+  width: 260px;
+  height: 61px;
+  margin-right: 2%;
+  margin-top: 20px;
+}
+header .header_flex_container .call_us {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 13px 10px 0px 13px;
+  font-stretch: expanded;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  height: 25px;
+  min-width: 45px;
+}
+header .header_flex_container .help_center {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 13px 10px 0px 13px;
+  font-stretch: expanded;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  height: 25px;
+  min-width: 45px;
+  width: 90px;
+  min-width: 90px;
+  min-height: 26px;
+  padding: 12px 2px 0px 6px;
+}
+header .header_flex_container .help_center img {
+  width: 85px;
+  min-height: 12px;
+}
+header .main_title_and_SearchButton {
+  margin: 180px auto 50px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  line-height: 0em;
+}
+header .main_title_and_SearchButton .blue_text {
+  color: #8ae2e2;
+  font-weight: bold;
+}
+header .main_title_and_SearchButton .search_guardian {
+  width: 274px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #ff5151;
+}
+header .main_title_h1 {
+  color: #8ae2e2;
+  font-size: 80px;
+}
+header .main_title_h2 {
+  font-size: 58px;
+}
+header .main_description {
+  font-size: 26px;
+  line-height: 1.5em;
+}
+.block_after_header {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #eff7f7;
+}
+.block_after_header .blue_underlined_link {
+  color: #8ae2e2;
+  text-decoration: underline;
+}
+.professional_categories_title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 105px 0px 80px 0px;
+}
+.professional_categories_blocks {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+}
+.professional_categories_blocks .category_block {
+  text-align: center;
+  height: 400px;
+  width: 20%;
+  min-width: 300px;
+}
+.professional_categories_blocks .category_block_title {
+  display: block;
+  height: 80px;
+  margin: 25px 0px 0px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.professional_categories_blocks .category_block_description {
+  display: block;
+  font-size: 16px;
+  line-height: 1.3em;
+}
+.Trustees_with_experience img {
+  width: 117px;
+  height: 115px;
+}
+.massage img {
+  width: 163px;
+  height: 115px;
+}
+.nurses img {
+  width: 107px;
+  height: 115px;
+}
+.therapy img {
+  width: 122px;
+  height: 115px;
+}
+.banner {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -200px;
+}
+.blue_container {
+  background-color: #66cfcf;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 950px;
+  width: 100%;
+}
+.blue_container .steps_title_and_button {
+  width: 40%;
+}
+.blue_container .steps_title_and_button .main_title_h1 {
+  font-size: 80px;
+  color: #ffffff;
+  line-height: 1.3em;
+}
+.blue_container .steps_title_and_button .search_guardian_2 {
+  width: 274px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #66cfcf;
+  border: 2px solid #ffffff;
+  margin-top: 40px;
+}
+.blue_container .steps_img {
+  width: 40%;
+}
+.review_title {
+  width: 100%;
+  height: 200px;
+  padding: auto auto;
+  background-color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 200px;
+  display: block;
+}
+.reviews {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.reviews .review {
+  width: 410px;
+  margin-bottom: 50px;
+}
+.reviews .review_text div {
+  height: 80px;
+  width: 370px;
+  text-align: justify;
+  padding: 38px 0px 38px 20px;
+}
+.reviews .review_text .messagebox {
+  position: absolute;
+  z-index: -1;
+}
+.reviews .review .client_info {
+  display: flex;
+  justify-items: flex-start;
+}
+.reviews .review .client_info .name_and_status_of_client {
+  width: 85%;
+  text-align: right;
+}
+.reviews .review .client_info .name_and_status_of_client div {
+  padding-top: 3px;
+}
+.reviews .review .client_info .client_avatar {
+  width: 15%;
+  text-align: right;
+}
+.our_strength {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 150px;
+}
+.our_strength_background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+.our_strength .our_strength_info {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #ffffff;
+  width: 40%;
+}
+.our_strength .our_strength_info .our_strength_text .blue_line {
+  width: 50px;
+  height: 2px;
+  background-color: #8ae2e2;
+  margin-top: 40px;
+}
+.our_strength .our_strength_title_and_button {
+  width: 40%;
+}
+.our_strength .our_strength_title_and_button .main_title_h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.3em;
+}
+.our_strength .our_strength_title_and_button .search_guardian_3 {
+  width: 274px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  margin-top: 50px;
+}
+.learn_more {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 0px;
+}
+.learn_more_container .title_h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+.learn_more_container .title_h3 {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.learn_more_container .call_us_button {
+  width: 210px;
+  height: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff5151;
+  border-radius: 5px;
+}
+footer {
+  background-color: #0b2a37;
+  height: 230px;
+  padding-top: 100px;
+}
+footer .footer_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+footer .footer_container .footer_follow_us {
+  width: 222px;
+  color: #ffffff;
+}
+footer .footer_container .footer_follow_us .footer_logo {
+  width: 222px;
+}
+footer .footer_container .footer_follow_us .footer_social_networks {
+  padding: 0px;
+  margin: 0px;
+  font-size: 22px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer_container .footer_follow_us .footer_social_networks p {
+  display: inline;
+}
+footer .footer_container .footer_follow_us .rights {
+  font-size: 13px;
+}
+footer .footer_container .footer_list ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer .footer_container .footer_list ul li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+footer .footer_container .footer_list ul li:nth-child(1) {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+@media all and (max-width: 1300px) and (min-width: 900px) {
+  .logo-2 {
+    display: none;
+  }
+  .menu-2 {
+    display: none;
+  }
+  header .main_title_and_SearchButton {
+    margin: 100px auto 30px;
+  }
+  header .main_title_h1 {
+    font-size: 60px;
+  }
+  header .main_title_h2 {
+    font-size: 38px;
+  }
+  header .main_description {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .blue_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 1100px;
+    text-align: center;
+    padding: 10px 10px;
+    width: calc(100% - 20px);
+  }
+  .blue_container .steps_title_and_button {
+    width: 90%;
+  }
+  .blue_container .steps_title_and_button .main_title_h1 {
+    font-size: 80px;
+    line-height: 1.3em;
+  }
+  .blue_container .steps_title_and_button .search_guardian_2 {
+    width: 274px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+    border: 2px solid #ffffff;
+  }
+  .blue_container .steps_img {
+    width: auto;
+    max-width: 440px;
+  }
+  .our_strength {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
+  .our_strength .our_strength_title_and_button {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .our_strength .our_strength_title_and_button .main_title_h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1em;
+  }
+  .our_strength .our_strength_title_and_button .search_guardian_3 {
+    width: 274px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+  .our_strength .our_strength_info {
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #ffffff;
+    width: 60%;
+  }
+  .our_strength .our_strength_info .our_strength_text .blue_line {
+    width: 50px;
+    height: 2px;
+    background-color: #8ae2e2;
+    margin-top: 20px;
+  }
+}
+@media all and (max-width: 899px) and (min-width: 400px) {
+  header .logo-1 {
+    display: none;
+  }
+  header .logo-2 {
+    display: block;
+  }
+  header .menu-1 {
+    display: none;
+  }
+  header .menu-2 {
+    display: flex;
+    align-items: center;
+  }
+  header .menu-2 a {
+    margin-left: 5px;
+  }
+  header .main_title_and_SearchButton {
+    margin: 30px auto 30px;
+  }
+  header .main_title_h1 {
+    font-size: 40px;
+  }
+  header .main_title_h2 {
+    font-size: 28px;
+  }
+  header .main_description {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0px;
+  }
+  .blue_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 1100px;
+    text-align: center;
+    padding: 10px 10px;
+    width: calc(100% - 20px);
+  }
+  .blue_container .steps_title_and_button {
+    width: 90%;
+  }
+  .blue_container .steps_title_and_button .main_title_h1 {
+    font-size: 40px;
+    line-height: 1.3em;
+  }
+  .blue_container .steps_title_and_button .search_guardian_2 {
+    width: 274px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+    border: 2px solid #ffffff;
+  }
+  .blue_container .steps_img {
+    width: auto;
+    max-width: 400px;
+  }
+  .our_strength {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
+  .our_strength .our_strength_title_and_button {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .our_strength .our_strength_title_and_button .main_title_h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1em;
+  }
+  .our_strength .our_strength_title_and_button .search_guardian_3 {
+    width: 274px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+  .our_strength .our_strength_info {
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #ffffff;
+    width: 60%;
+  }
+  .our_strength .our_strength_info .our_strength_text .blue_line {
+    width: 50px;
+    height: 2px;
+    background-color: #8ae2e2;
+    margin-top: 20px;
+  }
+}
