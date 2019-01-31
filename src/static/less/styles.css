@@ -18,10 +18,20 @@ body {
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
+  outline: none;
+  transition: border-radius 1s ease 0s;
+  cursor: pointer;
+}
+.button:active {
+  color: #8ae2e2;
+}
+.button:hover {
+  border-radius: 0px;
 }
 a {
   text-decoration: none;
   color: #ffffff;
+  user-select: none;
 }
 a:active {
   color: #8ae2e2;
@@ -42,13 +52,32 @@ a:active {
 .menu-2 a:nth-child(3) {
   font-size: 30px;
 }
+figure {
+  margin: 0px;
+}
 header {
   padding: 0px 15px 10px 15px;
   color: #ffffff;
   width: calc(100% - 30px);
-  background-image: url(images/top_1.png);
+  position: relative;
+}
+header .shade,
+header .top_1 {
+  position: absolute;
   background-repeat: no-repeat;
   background-size: 100%;
+  margin: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header .top_1 {
+  background-image: url(images/top-banner-shade.png);
+  z-index: -1;
+}
+header .shade {
+  background-image: url(images/top_1.png);
+  z-index: -2;
 }
 header .header_flex_container {
   position: relative;
@@ -62,6 +91,9 @@ header .header_flex_container .menu-1 {
   right: 10px;
   margin-top: 5px;
   font-size: 16px;
+}
+header .header_flex_container .menu-1 a {
+  margin-left: 30px;
 }
 header .header_flex_container .logo-1 {
   width: 260px;
@@ -120,7 +152,17 @@ header .main_title_and_SearchButton .search_guardian {
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
+  outline: none;
+  transition: border-radius 1s ease 0s;
+  cursor: pointer;
   background-color: #ff5151;
+  user-select: none;
+}
+header .main_title_and_SearchButton .search_guardian:active {
+  color: #8ae2e2;
+}
+header .main_title_and_SearchButton .search_guardian:hover {
+  border-radius: 0px;
 }
 header .main_title_h1 {
   color: #8ae2e2;
@@ -159,9 +201,18 @@ header .main_description {
 }
 .professional_categories_blocks .category_block {
   text-align: center;
-  margin-bottom: 60px;
-  width: 20%;
+  margin: 0px 20px 60px;
+  flex: 1;
   min-width: 300px;
+  max-width: 300px;
+}
+.professional_categories_blocks .category_block img {
+  transition: transform 0.5s ease;
+  transform: scale(1);
+}
+.professional_categories_blocks .category_block img:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
 }
 .professional_categories_blocks .category_block_title {
   display: block;
@@ -221,9 +272,18 @@ header .main_description {
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
+  outline: none;
+  transition: border-radius 1s ease 0s;
+  cursor: pointer;
   background-color: #66cfcf;
   border: 2px solid #ffffff;
   margin-top: 40px;
+}
+.blue_container .steps_title_and_button .search_guardian_2:active {
+  color: #8ae2e2;
+}
+.blue_container .steps_title_and_button .search_guardian_2:hover {
+  border-radius: 0px;
 }
 .blue_container .steps {
   position: relative;
@@ -289,7 +349,7 @@ header .main_description {
   border-left-color: white;
 }
 .blue_container .steps .arrow_right {
-  left: 105%;
+  left: calc(100% + 10px);
   top: 5px;
   border-radius: 0px 80px 80px 0px;
   clip-path: polygon(0px 1px, 0px 0px, 100% 0px, 100% 100%, 60% 110%);
@@ -299,7 +359,7 @@ header .main_description {
 }
 .blue_container .steps .arrow_left {
   height: 155px;
-  right: 105%;
+  right: calc(100% + 10px);
   top: 5px;
   border-radius: 90px 0px 0px 90px;
   clip-path: polygon(0% 0%, 0% 103%, 112px 103%, 100% 0%);
@@ -415,9 +475,18 @@ header .main_description {
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
+  outline: none;
+  transition: border-radius 1s ease 0s;
+  cursor: pointer;
   border: 2px solid #ffffff;
   background-color: transparent;
   margin-top: 50px;
+}
+.our_strength .our_strength_title_and_button .search_guardian_3:active {
+  color: #8ae2e2;
+}
+.our_strength .our_strength_title_and_button .search_guardian_3:hover {
+  border-radius: 0px;
 }
 .our_strength .hearth {
   position: absolute;
@@ -439,6 +508,14 @@ header .main_description {
   margin-bottom: 30px;
 }
 .learn_more_container .call_us_button {
+  width: 274px;
+  height: 70px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  transition: border-radius 1s ease 0s;
+  cursor: pointer;
+  font-size: 16px;
   width: 210px;
   height: 40px;
   font-weight: bold;
@@ -447,14 +524,20 @@ header .main_description {
   border-radius: 5px;
   border: none;
 }
+.learn_more_container .call_us_button:active {
+  color: #8ae2e2;
+}
+.learn_more_container .call_us_button:hover {
+  border-radius: 0px;
+}
 footer {
   background-color: #0b2a37;
   height: 230px;
-  padding-top: 100px;
+  padding: 100px 80px 0px;
 }
 footer .footer_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 footer .footer_container .footer_follow_us {
@@ -480,18 +563,28 @@ footer .footer_container .footer_follow_us .footer_social_networks p {
 footer .footer_container .footer_follow_us .rights {
   font-size: 13px;
 }
-footer .footer_container .footer_list ul {
+footer .footer_container .footer_lists {
+  display: flex;
+  align-items: flex-start;
+}
+footer .footer_container .footer_lists .footer_list {
+  margin-left: 60px;
+}
+footer .footer_container .footer_lists .footer_list p {
+  margin-top: 0px;
+  font-size: 22px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+footer .footer_container .footer_lists .footer_list ul {
   margin: 0px;
   padding: 0px;
 }
-footer .footer_container .footer_list ul li {
+footer .footer_container .footer_lists .footer_list ul li {
   list-style: none;
   color: #ffffff;
   font-size: 16px;
-}
-footer .footer_container .footer_list ul li:nth-child(1) {
-  font-size: 22px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 @media all and (max-width: 1300px) and (min-width: 900px) {
   .logo-2 {
@@ -537,8 +630,17 @@ footer .footer_container .footer_list ul li:nth-child(1) {
     color: #ffffff;
     font-weight: bold;
     font-size: 18px;
+    outline: none;
+    transition: border-radius 1s ease 0s;
+    cursor: pointer;
     margin-top: 40px;
     border: 2px solid #ffffff;
+  }
+  .blue_container .steps_title_and_button .search_guardian_2:active {
+    color: #8ae2e2;
+  }
+  .blue_container .steps_title_and_button .search_guardian_2:hover {
+    border-radius: 0px;
   }
   .blue_container .steps_img {
     width: auto;
@@ -570,12 +672,21 @@ footer .footer_container .footer_list ul li:nth-child(1) {
     color: #ffffff;
     font-weight: bold;
     font-size: 18px;
+    outline: none;
+    transition: border-radius 1s ease 0s;
+    cursor: pointer;
     width: 200px;
     height: 50px;
     font-size: 14px;
     border: 2px solid #ffffff;
     background-color: transparent;
     margin-top: 20px;
+  }
+  .our_strength .our_strength_title_and_button .search_guardian_3:active {
+    color: #8ae2e2;
+  }
+  .our_strength .our_strength_title_and_button .search_guardian_3:hover {
+    border-radius: 0px;
   }
   .our_strength .our_strength_info {
     margin-top: 40px;
@@ -611,7 +722,7 @@ footer .footer_container .footer_list ul li:nth-child(1) {
     align-items: center;
   }
   header .menu-2 a {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   header .main_title_and_SearchButton {
     margin: 30px auto 10px;
@@ -778,7 +889,8 @@ footer .footer_container .footer_list ul li:nth-child(1) {
   footer .footer_container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 50px;
   }
@@ -805,22 +917,26 @@ footer .footer_container .footer_list ul li:nth-child(1) {
   footer .footer_container .footer_follow_us .rights {
     font-size: 13px;
   }
-  footer .footer_container .footer_list {
+  footer .footer_container .footer_lists {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_container .footer_lists .footer_list {
     min-width: 200px;
     width: 100%;
     margin: 20px auto 0px;
     height: auto;
   }
-  footer .footer_container .footer_list ul {
+  footer .footer_container .footer_lists .footer_list ul {
     margin: 0px;
     padding: 0px;
   }
-  footer .footer_container .footer_list ul li {
+  footer .footer_container .footer_lists .footer_list ul li {
     list-style: none;
     color: #ffffff;
     font-size: 16px;
   }
-  footer .footer_container .footer_list ul li:nth-child(1) {
+  footer .footer_container .footer_lists .footer_list ul li:nth-child(1) {
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
